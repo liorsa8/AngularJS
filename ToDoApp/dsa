@@ -1,0 +1,7 @@
+<div ng-repeat="w in weatherResult.list">
+    <div class="row">
+        <div class="col-mid-12">
+            <weather-report weather-day="w" convert-to-standart="convertToFahrenheit(daytimeTemp)" convert-to-date="convertToDay(dt)" date-format="MMM d,y"></weather-report>
+        </div>
+    </div>
+</div>
