@@ -1,0 +1,31 @@
+
+body ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F97300;
+  position: sticky;
+}
+body li {
+  float: left;
+}
+
+body li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 40px;
+  text-decoration: none;
+  font-size: 120%; 
+}
+
+body li a:hover{
+  background-color: #111;
+}
+
+.footer {
+    background-color: #F1F1F1;
+    text-align: left;
+    padding: 10px;
+  }

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" ng-app="mainModule">
+<head>
+    <meta charset="utf-8">
+    <title>TodoApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="lior salamon">
+
+    <!-- style sheets-->
+    <link rel="icon" type="image/ico" href="favicon1.ico"/>
+    <link rel="stylesheet" href="styles.css" type="text/css">  
+    <link rel="stylesheet" href="app/styles/homeStyle.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+    <!--<script src="main.js"></script> -->
+
+    <!-- Library scripts-->
+    <script src="https://code.angularjs.org/1.7.9/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.7.9/angular-route.min.js"></script> 
+    <!--<script src="https://code.angularjs.org/1.7.9/angular-resource.min.js"></script> -->
+
+    <!-- application script module-->
+    <script src="app/app.js"></script>
+
+    <!-- application controllers-->
+    <script src="app/todoListController.js" ></script> 
+    <base href="/">
+</head>
+
+<body>
+    
+    <ul>
+        <li><a class="active" href="home">ToDo List</a></li>
+        <li><a href="contact">Contact</a></li>
+        <li><a href="about">About</a></li>
+    </ul> 
+
+    <!--<div ng-include="'app/pages/home.html'"></div>-->
+    <ng-view></ng-view>
+    
+    <div class="footer"> &#169 All rights reserved to Lior Salamon</div>
+</body>
+</html>
